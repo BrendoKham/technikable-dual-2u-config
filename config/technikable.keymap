@@ -41,34 +41,17 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        ToggleBaseLayer {
-            bindings = <&tog 0>;
-            key-positions = <1 2 3>;
-        };
-
-        ToggleNumberLayer {
-            bindings = <&tog 1>;
-            key-positions = <13 14 15>;
-        };
-
-        ToggleNavLayer {
-            bindings = <&tog 2>;
-            key-positions = <25 26 27>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
 
         base_layer {
             bindings = <
-&mt TILDE ESCAPE  &mt NUMBER_1 LS(Q)  &mt NUMBER_2 W  &mt N3 E      &mt NUMBER_4 R    &mt N5 T                   &mt NUMBER_6 Y  &mt NUMBER_7 U     &mt NUMBER_8 I  &mt NUMBER_8 LS(O)  &mt NUMBER_9 P         &mt NUMBER_0 BACKSPACE
-&kp TAB           &mt LEFT_GUI A      &mt LEFT_ALT S  &mt LCTRL D   &mt LEFT_SHIFT F  &kp G                      &kp H           &mt RIGHT_SHIFT J  &mt LCTRL K     &mt RIGHT_ALT L     &mt LEFT_BRACKET SEMI  &mt SINGLE_QUOTE RIGHT_BRACKET
-&kp LSHFT         &kp Z               &kp X           &kp C         &kp V             &kp B                      &kp N           &kp M              &kp COMMA       &kp DOT             &kp FSLH               &kp RET
-                                      &kp LCTRL       &kp LEFT_ALT  &lt 1 SPACE                 &mt ENTER SPACE                  &kp HOME           &kp RCTRL
+&mt KP_N0 ESCAPE  &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt N3 E      &mt NUMBER_4 R    &mt N5 T                   &mt NUMBER_6 Y  &mt NUMBER_7 U     &mt NUMBER_8 I  &mt NUMBER_8 O   &mt NUMBER_9 P         &kp BACKSPACE
+&kp TAB           &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D   &mt LEFT_SHIFT F  &kp G                      &kp H           &mt RIGHT_SHIFT J  &mt LCTRL K     &mt RIGHT_ALT L  &mt LEFT_BRACKET SEMI  &mt SINGLE_QUOTE RIGHT_BRACKET
+&kp LSHFT         &kp Z           &kp X           &kp C         &kp V             &kp B                      &kp N           &kp M              &kp COMMA       &kp DOT          &kp FSLH               &kp RET
+                                  &kp LCTRL       &kp LEFT_ALT  &lt 1 SPACE                 &mt ENTER SPACE                  &kp HOME           &kp RCTRL
             >;
         };
 
