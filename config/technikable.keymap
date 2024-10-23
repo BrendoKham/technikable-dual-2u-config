@@ -62,19 +62,19 @@
 
         base_layer {
             bindings = <
-&mt KP_N0 ESCAPE  &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt N3 E      &mt NUMBER_4 R    &mt N5 T               &mt NUMBER_6 Y  &mt NUMBER_7 U     &mt NUMBER_8 I  &mt NUMBER_8 O   &mt NUMBER_9 P         &kp BACKSPACE
-&kp TAB           &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D   &mt LEFT_SHIFT F  &kp G                  &kp H           &mt RIGHT_SHIFT J  &mt LCTRL K     &mt RIGHT_ALT L  &mt LEFT_BRACKET SEMI  &mt SINGLE_QUOTE RIGHT_BRACKET
-&kp LSHFT         &kp Z           &kp X           &kp C         &kp V             &kp B                  &kp N           &kp M              &kp COMMA       &kp DOT          &kp FSLH               &kp RET
-                                  &kp LCTRL       &kp LEFT_ALT  &lt 1 SPACE                 &lt 2 SPACE                  &kp HOME           &tog 3
+&kp ESC    &kp Q  &kp W      &kp E         &kp R        &kp T               &kp Y  &kp U     &kp I                       &kp O                      &kp P                  &kp BACKSPACE
+&kp TAB    &kp A  &kp S      &kp D         &kp F        &kp G               &kp H  &kp J     &kp K                       &kp L                      &mt LEFT_BRACKET SEMI  &mt SINGLE_QUOTE RIGHT_BRACKET
+&kp LSHFT  &kp Z  &kp X      &kp C         &kp V        &kp B               &kp N  &kp M     &mt COMMA LEFT_PARENTHESIS  &mt DOT RIGHT_PARENTHESIS  &mt UNDER FSLH         &kp RET
+                  &kp LCTRL  &kp LEFT_ALT  &lt 1 SPACE         &lt 2 SPACE         &kp HOME  &tog 3
             >;
         };
 
         num_layer {
             bindings = <
-&kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH  &trans          &kp PAGE_UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSPACE
-&kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &trans          &kp PAGE_DOWN  &kp HOME              &kp END                &kp SEMICOLON     &kp SINGLE_QUOTE   &trans
-&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans          &trans         &trans                &trans                 &kp LESS_THAN     &kp GREATER_THAN   &trans
-                         &kp NUMBER_0  &kp EQUAL     &trans             &trans                 &trans                &trans
+&kp ASTRK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH  &kp DOUBLE_QUOTES          &kp AMPS   &kp EXCL    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT    &kp BACKSPACE
+&kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp SINGLE_QUOTE           &kp PIPE   &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION   &kp AT
+&kp HASH   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp BACKSLASH              &kp TILDE  &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
+                         &kp NUMBER_0  &kp EQUAL     &trans                        &trans             &trans      &trans
             >;
         };
 
