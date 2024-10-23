@@ -65,16 +65,16 @@
 
         base_layer {
             bindings = <
-&mt TILDE ESCAPE  &kp Q  &kp W      &kp E         &kp R        &kp T                   &kp Y  &kp U     &mt LEFT_PARENTHESIS I  &mt RIGHT_PARENTHESIS LS(O)  &mt MINUS P            &mt EQUAL BACKSPACE
-&kp TAB           &kp A  &kp S      &kp D         &kp F        &kp G                   &kp H  &kp J     &kp K                   &kp L                        &mt LEFT_BRACKET SEMI  &mt SINGLE_QUOTE RIGHT_BRACKET
-&kp LSHFT         &kp Z  &kp X      &kp C         &kp V        &kp B                   &kp N  &kp M     &kp COMMA               &kp DOT                      &kp FSLH               &kp RET
-                         &kp LCTRL  &kp LEFT_ALT  &lt 1 SPACE         &mt ENTER SPACE         &kp HOME  &kp RCTRL
+&mt TILDE ESCAPE  &mt NUMBER_1 LS(Q)  &mt NUMBER_2 W  &mt N3 E      &mt NUMBER_4 R  &mt N5 T                   &mt NUMBER_6 Y  &mt NUMBER_7 U  &mt NUMBER_8 I  &mt NUMBER_8 LS(O)  &mt NUMBER_9 P         &mt NUMBER_0 BACKSPACE
+&kp TAB           &kp A               &kp S           &kp D         &kp F           &kp G                      &kp H           &kp J           &kp K           &kp L               &mt LEFT_BRACKET SEMI  &mt SINGLE_QUOTE RIGHT_BRACKET
+&kp LSHFT         &kp Z               &kp X           &kp C         &kp V           &kp B                      &kp N           &kp M           &kp COMMA       &kp DOT             &kp FSLH               &kp RET
+                                      &kp LCTRL       &kp LEFT_ALT  &lt 1 SPACE               &mt ENTER SPACE                  &kp HOME        &kp RCTRL
             >;
         };
 
         num_layer {
             bindings = <
-&kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH  &trans          &kp PAGE_UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp SLASH  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH  &trans          &kp PAGE_UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSPACE
 &kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &trans          &kp PAGE_DOWN  &kp HOME              &kp END                &kp SEMICOLON     &kp SINGLE_QUOTE   &trans
 &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans          &trans         &trans                &trans                 &kp LESS_THAN     &kp GREATER_THAN   &trans
                          &kp NUMBER_0  &kp EQUAL     &trans             &trans                 &trans                &trans
