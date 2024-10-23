@@ -39,6 +39,20 @@
             bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp ESCAPE>;
             label = "TASKMANAGER";
         };
+
+        Copy: Copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(S)>;
+            label = "COPY";
+        };
+
+        Paste: Paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(V)>;
+            label = "PASTE";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -48,10 +62,10 @@
 
         base_layer {
             bindings = <
-&mt KP_N0 ESCAPE  &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt N3 E      &mt NUMBER_4 R    &mt N5 T                   &mt NUMBER_6 Y  &mt NUMBER_7 U     &mt NUMBER_8 I  &mt NUMBER_8 O   &mt NUMBER_9 P         &kp BACKSPACE
-&kp TAB           &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D   &mt LEFT_SHIFT F  &kp G                      &kp H           &mt RIGHT_SHIFT J  &mt LCTRL K     &mt RIGHT_ALT L  &mt LEFT_BRACKET SEMI  &mt SINGLE_QUOTE RIGHT_BRACKET
-&kp LSHFT         &kp Z           &kp X           &kp C         &kp V             &kp B                      &kp N           &kp M              &kp COMMA       &kp DOT          &kp FSLH               &kp RET
-                                  &kp LCTRL       &kp LEFT_ALT  &lt 1 SPACE                 &mt ENTER SPACE                  &kp HOME           &kp RCTRL
+&mt KP_N0 ESCAPE  &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt N3 E      &mt NUMBER_4 R    &mt N5 T               &mt NUMBER_6 Y  &mt NUMBER_7 U     &mt NUMBER_8 I  &mt NUMBER_8 O   &mt NUMBER_9 P         &kp BACKSPACE
+&kp TAB           &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LCTRL D   &mt LEFT_SHIFT F  &kp G                  &kp H           &mt RIGHT_SHIFT J  &mt LCTRL K     &mt RIGHT_ALT L  &mt LEFT_BRACKET SEMI  &mt SINGLE_QUOTE RIGHT_BRACKET
+&kp LSHFT         &kp Z           &kp X           &kp C         &kp V             &kp B                  &kp N           &kp M              &kp COMMA       &kp DOT          &kp FSLH               &kp RET
+                                  &kp LCTRL       &kp LEFT_ALT  &lt 1 SPACE                 &lt 2 SPACE                  &kp HOME           &tog 3
             >;
         };
 
@@ -66,10 +80,10 @@
 
         nav_layer {
             bindings = <
-&bt BT_CLR  &trans          &trans        &trans        &trans        &trans                &trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp C_VOLUME_UP
-&trans      &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT     &trans                &trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOLUME_DOWN
-&trans      &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &kp F9  &kp F10  &kp F11  &kp F11  &kp K_MUTE
-                            &trans        &trans        &trans                      &trans          &trans  &trans
+&bt BT_CLR    &kp HOME        &kp PAGE_DOWN  &kp PG_UP     &kp END       &trans          &trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp C_VOLUME_UP
+&taskmanager  &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT     &trans          &trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp C_VOLUME_DOWN
+&trans        &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &trans          &trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp K_MUTE
+                              &trans         &trans        &trans                &trans          &trans  &trans
             >;
         };
 
