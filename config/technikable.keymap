@@ -64,10 +64,10 @@
 
         num_layer {
             bindings = <
-&kp ASTRK     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH  &kp AMPS           &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp PERCENT    &kp BACKSPACE
-&kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp CARET          &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE       &kp QUESTION   &kp AT
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp UNDER          &kp COLON          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp LESS_THAN  &kp GREATER_THAN
-                            &kp HASH      &kp EQUAL     &trans                &trans                     &kp AMPS              &kp GRAVE
+&kp ASTRK     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SLASH  &kp AMPS              &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp PERCENT    &kp BACKSPACE
+&kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp COLON             &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE       &kp QUESTION   &kp AT
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &kp UNDER             &kp CARET          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &kp LESS_THAN  &kp GREATER_THAN
+                            &kp HASH      &kp EQUAL     &trans                &kp UNDER                     &kp AMPS              &kp GRAVE
             >;
         };
 
